@@ -1,0 +1,5 @@
+# Ignore terraform .terraform
+**.terraform**
+
+# Ignore idea config files
+**.idea
