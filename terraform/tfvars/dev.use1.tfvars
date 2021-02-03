@@ -10,10 +10,13 @@ resource_configuration_metadata = {
       }
       "iops" = {
         "read_capacity" = 1
-        "write_capacity" = 1
+        "write_capacity" = 2
       }
     }
   }
 }
 
-source_provider_assume_role_arn = "" #TODO: create an assume role ARN for terraform in personal account
+#### Provider configurations
+region = "us-east-1"
+source_provider_assume_role_arn = "arn:aws:iam::231086498412:role/candyland-service-role" #TODO: create an assume role ARN for terraform in personal account
+

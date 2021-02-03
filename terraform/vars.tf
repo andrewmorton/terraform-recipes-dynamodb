@@ -8,6 +8,11 @@ variable "resource_configuration_metadata" {
 }
 
 variable "source_provider_assume_role_arn" {
-  type = map
-  description = "Configuration map for targeted resources"
+  type = string
+  description = "Assume role arn for service user"
+}
+
+variable "region" {
+  type = string
+  description = "Region to set for provider and resources"
 }
